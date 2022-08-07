@@ -1,0 +1,1 @@
+//will return infinite loop because number with decimal is not the actual value so maybe it will never be 10.00 but it will be 10.0000000004
