@@ -1,16 +1,24 @@
-// let employee = prompt('Enter employee name');
-
 const employees = {
-    john: { salary: 1000, address: { district: 'Ratchathewi', province: 'Bangkok' } },
-    peter: { salary: 1500, address: { district: 'Pathumwan', province: 'Bangkok' } },
-    mike: { salary: 800, address: { district: 'Pakkret', province: 'Nonthaburi' } },
-    sarah: { salary: 2200, address: { district: 'Sriraja', province: 'Chonburi' } }
-  };
-}
+    john: {
+        salary: 1000,
+        address: { district: 'Ratchathewi', province: 'Bangkok' },
+    },
+    peter: {
+        salary: 1500,
+        address: { district: 'Pathumwan', province: 'Bangkok' },
+    },
+    mike: {
+        salary: 800,
+        address: { district: 'Pakkret', province: 'Nonthaburi' },
+    },
+    sarah: {
+        salary: 2200,
+        address: { district: 'Sriraja', province: 'Chonburi' },
+    },
+};
 
-let employee = 'john';
+const employee = prompt('Enter employee name');
 if (employee in employees) {
-    // result = {n}
-    console.log(employees[employee]);
-}
-else(console.log("Not Found"))
+    result = `name: ${employee}, salary: ${employees[employee].salary}, address: ${employees[employee].address.district}, ${employees[employee]['address']['province']}`;
+    console.log(result);
+} else console.log('Not Found');

@@ -1,9 +1,9 @@
 const alphabets = ['a', 'b', 'a', 'c', 'a', 'd'];
-let foundIndex =alphabets.indexOf("a",i)
-
-
-for (i in (alphabets.length)){
-    foundIndex = alphabets.indexOf("a",i){
-
+result = [];
+alphabets.forEach((item, index, array) => {
+    if (item === 'a') {
+        result.push(index);
     }
-}
+});
+
+console.log(result);

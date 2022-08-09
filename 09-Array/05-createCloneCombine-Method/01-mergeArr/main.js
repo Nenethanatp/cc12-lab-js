@@ -1,7 +1,9 @@
 const a = [1, 5, 7, 11];
 const b = [2, 3, 6];
 
-newArray = a.concat(b)
+newArray = a.concat(b);
 
-console.log(newArray)
+console.log(newArray);
 
+// use rest paramter
+// console.log([...a,...b])

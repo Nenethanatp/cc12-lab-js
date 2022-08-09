@@ -1,4 +1,4 @@
 const sports = ['football', 'volleyball', 'tennis', 'basketball', 'judo'];
-result = sports.slice(1,4)
+result = sports.slice(1, 4);
 
-console.log(result)
+console.log(result);
