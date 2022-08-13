@@ -1,7 +1,8 @@
 let arr = ['React', 'Vue', 'Angular'];
-function copySorted(array){
-    const clone = array.slice()
-    return clone.sort(0)
+function copySorted(array) {
+    const clone = array.slice();
+    return clone.sort();
 }
 
-copySorted(arr)
+console.log(copySorted(arr));
+console.log(arr);
